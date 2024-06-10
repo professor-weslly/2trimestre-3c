@@ -6,7 +6,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Qual sua opinião sobre o chat gpt?,
+        enunciado: "Qual sua opinião sobre o chat gpt?",
             alternativas: [
             "Isso é assustador!",
             "Isso é maravilhoso!"
