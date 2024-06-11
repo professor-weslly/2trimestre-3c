@@ -8,8 +8,14 @@ const perguntas = [
     {
         enunciado: "Qual sua opinião sobre o chat gpt?",
             alternativas: [
-            "Isso é assustador!",
-            "Isso é maravilhoso!"
+       /* { */   
+            texto: "Isso é assustador!",
+            afirmação: "afirmação"
+        /*}, */
+          /* { */   
+            texto: "Isso é assustador!",
+            afirmação: "afirmação"
+        /*}, */ fazer isso para todas as perguntas      
         ]
     },
     {
@@ -54,7 +60,11 @@ function mostraPergunta() {
 function mostraAlternativas() {
     for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa;
+        botaoAlternativas.textContent = alternativa/*.texto*/;
+       /*botaoAlternativas.addEventListener("click", function () { */
+            /*atual++;*/
+            /*mostraPergunta();*/
+    /*})*/
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
